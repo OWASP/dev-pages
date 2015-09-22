@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="OWASP Developer Pages : Developer Focused AppSec Pages">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+
+    <title>Develeopers @ OWASP:  Java Spring</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/OWASP/dev-pages">View on GitHub</a>
+
+          <h1 id="project_title">Java Spring Developers @ OWASP</h1>
+          <h2 id="project_tagline">Java Spring Developer Focused Application Security Pages</h2>
+
+            <section id="quick-links">
+
+            <!--
+              Use this for something?
+
+              <a class="spring_link" href="./spring/index.html">Spring</a> |
+              <a class="struts_link" href="./struts/index.html">Struts</a> | 
+              <a class="android_link" href="./android/index.html">Android</a> 
+            </section>
+            --> 
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="welcome-to-owasp-dev-pages" class="anchor" href="#welcome-to-owasp-dev-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spring Application Security</h3>
+
+<p>Spring provides significant security capabilities that developers can leverage to improve the security of applications.</p>
+
+<p>For <strong>web applications</strong>, recent Spring releases make it easy to set browser headers that enable security.
+Simply use a SecurityContext and the defaults are sound as of Spring 4.  Here are some exmaples illustrating how to use 
+Spring to set browser security headers:  </p>
+
+<p>Spring also provides authentication through Spring security which can be wired into a variety of identity providers.  As 
+a general rule, this is recommended.  One pitfall with Spring security configuration is accidentally leaving resources
+unprotected - in other words, having the rules that allow access be too permissive.</p>
+
+<p>Authorization is really hard to get right or set out a stable model that will work across different use cases.  Spring
+provides function level access control (A7) through annotations to controllers or services.  It is recommended that a style 
+and approach be adopted and used consistently throughout the application.</p>
+
+<p>Spring also provides instnace based authorization (A4) through ORM lifecycle events.  Instance based security is what 
+ensures that a user can only see <strong>their</strong> timesheet and not someone else's.</p>
+
+<p>As a general rule, unless the application is using ThymeLeaf, Java/JSP applications can be susceptible to XSS (A3).  It is
+recommended that all output be encoded using a library level function to ensure that user input doesn't get sent to the
+browser in a way that will be executed.</p>
+
+<p>Spring and Jasypt provide a relatively straightforward way to prevent committing sensitive information like database
+credentials to source control.  This is recommended.</p>
+
+<p>Spring pulls a large number of dependent libraries, so it is recommended that a tool such as OWASP's Dependency Check
+be used to identify vulnerabilities in dependent libraries.  Also, committing to updating libraries and dependencies is
+important in this ecosystem.
+</p>
+
+<p>Most applications written with Spring use JDBCTemplate or Hibernate for persistence.  Note that these do not universally
+protect from SQL Injection, though they generally encourage safer practices.  Always use parameterized queries and ensure
+that String concatenation is not happening with queries.
+</p>
+
+<p>Spring MVC provides an easy and clear place to perform input validation (Validators).  Use input validation and 
+prefer whitelists.
+</p>
+
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources</h3>
+<!--  Provide detailed links to Spring security sections based on capabilities.  -->
+<ul>
+<li><a href="http://springframework.org">Spring Security</a></li>
+<li><a href="http://owasp.org">OWASP Top 10</a></li>
+</ul>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with the developer pages? Help us update them or <a href="mailto:matt.konda@owasp.org">matt.konda@owasp.org</a> and we’ll help you sort it out.  See something wrong?  Get involved and help us fix it!</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+                <p class="copyright">
+            Jump to:  
+            <a href="/index.html">Home</a> | 
+            <a href="/java/">Java</a> | <a href="/javascript/">Javascript</a> | <a href="/dotnet/">.NET</a> | 
+            <a href="/php/">PHP</a> | <a href="/ruby/">Ruby</a> | <a href="/python/">Python</a> | 
+            <a href="/general/">General</a>
+          </p>
+
+        <p class="copyright">OWASP Developer Pages maintained by <a href="https://github.com/OWASP">OWASP</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
