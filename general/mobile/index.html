@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
 
-    <title>Develeopers @ OWASP:  General Java</title>
+    <title>Develeopers @ OWASP:  Mobile Security</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/OWASP/dev-pages">View on GitHub</a>
 
-          <h1 id="project_title">Java  Developers @ OWASP</h1>
-          <h2 id="project_tagline">Java  Developer Focused Application Security Pages</h2>
+          <h1 id="project_title">Mobile Security @ OWASP</h1>
+          <h2 id="project_tagline">Mobile Security Focused Application Security Pages</h2>
 
             <section id="quick-links">
 
@@ -39,32 +39,35 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="welcome-to-owasp-dev-pages" class="anchor" href="#welcome-to-owasp-dev-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>General Java Application Security</h3>
+<a id="welcome-to-owasp-dev-pages" class="anchor" href="#welcome-to-owasp-dev-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mobile Application Security</h3>
 
-<p>Interestingly, Java gets a bad rap in the security world even though in many ways Java based applications encourage
-a number of important security improvements.  The bad rap comes from vulnerabilities in the JVM, and the extent to which
-attackers can use malicious java to run arbitrary code through browsers.  This is a reason to give a second thought to
-web based rich application delivery (applets).</p>
+<p>Mobile Application security has msot of the challenges of web security and some additional ones due to 
+the endpoint the app is running on.</p>
 
-<p>Java is compiled to bytecode and then run in a JVM.  Running the code this way generally prevents buffer overflows and 
-memory allocation issues, a very important class of vulnerability that is common in C and C++ programs.  Specifically, 
-Java developers rarely have to consciously use or free memory - it is done automatically through garbage collection.
+<p>One of the most important concerns with mobile is sensitive data.  If an application is storing credentials, 
+credit card information or other data, it needs to be extremely careful to avoid exposing those to other applications 
+or malicious users that take possesion of the phone (through theft or buying one on ebay).  Generally, the best
+practice will be not to store truly sensitive data locally on a phone.  When storing data on a device, it is 
+critical to understand what type of storage is being used and how it is shared between applications.
 </p>
 
-<p>Java is a very rich langauge.  This can mean that simple programs create large amounts of objects and use surprising
-amounts of memory.  This is something to watch out for during development as it can result in performance and denial of 
-service issues with an application.</p>
-
-<p>Java applications often use a large number of open source libraries.  Since vulnerabilities in the libraries can 
-cause issues, it is important when working in Java to use a tool like OWASP Dependency Check to identify security issues
-in dependent libraries.</p>
-
-<p>Although Java is compiled to bytecode, it is possible to decompile bytecode to readable Java code.  This means that
-distributing .jar, .war, .ear or .apk files with compiled code is effectively sharing source code for an application.
+<p>Since mobile phones are often used on different networks, it is important ot implement strong connection
+security.  On a phone, this doesn't just mean SSL - it means TLS with certificate pinning if possible.  In all 
+cases apps should verify that the cert they are accepting is valid and matches the name they expect.  All too 
+often, mobile apps are vulnerable to MITM attacks because they are each implementing their SSL connection 
+(unlike in a web app where the browsers handle connection security through TLS + HSTS, revocation checking, etc.).
 </p>
 
-<p>Java offers very advanced multithreading capabilities.  When in doubt, use the concurrrent packages to avoid writing
-code that isn't threadsafe.
+<p>Many phone applications can be reverse engineered or mimiced.  It is important to think about how a user 
+knows to trust your application versus a knock off with malware embedded in it.
+</p>
+
+<p>Often, mobile applications ask for broad permissions to access contacts, location, shared data, etc.  As a rule,
+mobile app developers should be cautious about requiring too much access.
+</p>
+
+<p>Mobile applications often use 3rd party applications for tracking or ads.  These should be understood and 
+carefully considered before including them.
 </p>
 
 <h3>
