@@ -1,0 +1,8 @@
+source:      .
+destination: ./_site
+includes:    ./_includes
+pygments:    true
+permalink:   /:title.html
+
+baseurl: /dev-pages
+description: "OWASP Dev Pages"
