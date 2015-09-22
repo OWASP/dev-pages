@@ -1,18 +1,8 @@
 ---
 title: General Landing
+layout: default
 ---
-<!DOCTYPE html>
-<html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="OWASP Developer Pages : Developer Focused AppSec Pages">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
-
-    <title>Develeopers @ OWASP:  General Application Security</title>
-  </head>
 
   <body>
 
@@ -65,25 +55,7 @@ tries to abstract general areas and present some of the most important guidance 
       </section>
     </div>
 
+
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-              <p class="copyright">
-            Jump to:  
-            [Home](index.html) |
-            [Java](java/index.html) | <a href="/javascript/">Javascript</a> | <a href="/dotnet/">.NET</a> | 
-            ||| 
-            <a href="/index.html">Home</a> | 
-            <a href="/java/">Java</a> | <a href="/javascript/">Javascript</a> | <a href="/dotnet/">.NET</a> | 
-            <a href="/php/">PHP</a> | <a href="/ruby/">Ruby</a> | <a href="/python/">Python</a> | 
-            <a href="/general/">General</a>
-          </p>
-
-        <p class="copyright">OWASP Developer Pages maintained by <a href="https://github.com/OWASP">OWASP</a></p>
-      </footer>
-    </div>
-
+    {{ footer }}
     
-
-  </body>
-</html>
