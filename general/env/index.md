@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="OWASP Developer Pages : Developer Focused AppSec Pages">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
-
-    <title>Develeopers @ OWASP:  DevOps Security</title>
-  </head>
+---
+title: Developer Environment
+layout: default
+---
 
   <body>
 
@@ -18,8 +10,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/OWASP/dev-pages">View on GitHub</a>
 
-          <h1 id="project_title">DevOps Security @ OWASP</h1>
-          <h2 id="project_tagline">DevOps Security Focused Application Security Pages</h2>
+          <h1 id="project_title">Dev Env Security @ OWASP</h1>
+          <h2 id="project_tagline">Dev Env Security Focused Application Security Pages</h2>
 
             <section id="quick-links">
 
@@ -39,24 +31,16 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="welcome-to-owasp-dev-pages" class="anchor" href="#welcome-to-owasp-dev-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>DevOps Application Security</h3>
+<a id="welcome-to-owasp-dev-pages" class="anchor" href="#welcome-to-owasp-dev-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development Environment Security</h3>
 
-<p>DevOps helps us to continuously deliver our applications.  It generally involves: </p>
-<ul>
-<li>Scripted provisioning of servers and network infrastructure</li>
-<li>Scripted deployment</li>
-<li>Automated testing</li>
-<li>Feedback loops</li>
-</ul>
+<p>Often developers have ssh keys, database passwords, API keys and other sensitive information in their local 
+environment or in source control.  It is dangerous to share such sensitive information in this way, as often this
+means that a developer that leaves a company may retain credentials to production systems.</p>
 
-<p>There are a number of awesome things we can and should do related to security and DevOps: </p>
-<ul>
-<li>Protect credentials for all of the provisioning scripts</li>
-<li>Automate security tool integration for early feedback</li>
-<li>Leverage feedback loops to identify anomolous behavior from a security perspective</li>
-</ul>
-
-
+<p>Where possible, get security feedback in your development enviornment.  Whether that means running an IDE plugin or a 
+command line tool, the better visibility you have to potential security issues as you go, the more secure your code will
+be and the better chance you'll have of avoiding rewrites or major remediation efforts.
+</p>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources</h3>

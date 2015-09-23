@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="OWASP Developer Pages : Developer Focused AppSec Pages">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
-
-    <title>Develeopers @ OWASP:  API Security</title>
-  </head>
+---
+title: OWASP API Developer Pages
+layout: default
+---
 
   <body>
 
@@ -29,9 +21,9 @@
               <a class="spring_link" href="./spring/index.html">Spring</a> |
               <a class="struts_link" href="./struts/index.html">Struts</a> | 
               <a class="android_link" href="./android/index.html">Android</a> 
-            </section>
             --> 
-
+            </section>
+            
         </header>
     </div>
 
@@ -67,20 +59,6 @@ can be an important consideration.  Metrics can be extremely helpful in identify
       </section>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-                <p class="copyright">
-            Jump to:  
-            <a href="/index.html">Home</a> | 
-            <a href="/java/">Java</a> | <a href="/javascript/">Javascript</a> | <a href="/dotnet/">.NET</a> | 
-            <a href="/php/">PHP</a> | <a href="/ruby/">Ruby</a> | <a href="/python/">Python</a> | 
-            <a href="/general/">General</a>
-          </p>
-
-        <p class="copyright">OWASP Developer Pages maintained by <a href="https://github.com/OWASP">OWASP</a></p>
-      </footer>
-    </div>
 
     
 

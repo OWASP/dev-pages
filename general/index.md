@@ -3,9 +3,7 @@ title: General Landing
 layout: default
 ---
 
-
-  <body>
-
+<body>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -26,6 +24,7 @@ layout: default
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
+
 <a id="welcome-to-owasp-dev-pages" class="anchor" href="#welcome-to-owasp-dev-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>General Application Security</h3>
 
 <p>The purpose of these pages is to provide specific input to developers around security.  This specific area
@@ -52,10 +51,10 @@ tries to abstract general areas and present some of the most important guidance 
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with the developer pages? Help us update them or <a href="mailto:matt.konda@owasp.org">matt.konda@owasp.org</a> and we’ll help you sort it out.  See something wrong?  Get involved and help us fix it!</p>
+
       </section>
     </div>
 
+</body>
+</html>
 
-    <!-- FOOTER  -->
-    {{ footer }}
-    
