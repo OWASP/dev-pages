@@ -21,8 +21,8 @@ layout: default
               <a class="spring_link" href="./spring/index.html">Spring</a> |
               <a class="struts_link" href="./struts/index.html">Struts</a> | 
               <a class="android_link" href="./android/index.html">Android</a> 
-            </section>
             --> 
+            </section>
 
         </header>
     </div>
